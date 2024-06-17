@@ -1,0 +1,105 @@
+[gd_scene load_steps=3 format=3 uid="uid://lbs1784ipcx6"]
+
+[ext_resource type="Texture2D" uid="uid://xo46nr0kicej" path="res://assets/timer.png" id="1_ancxm"]
+[ext_resource type="FontFile" uid="uid://bttn4sbekg567" path="res://assets/alarm clock.ttf" id="2_euxf8"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(645, 323)
+scale = Vector2(0.377083, 0.428138)
+texture = ExtResource("1_ancxm")
+
+[node name="MINUTES" type="Button" parent="."]
+offset_left = -419.005
+offset_top = 263.934
+offset_right = -396.005
+offset_bottom = 294.934
+scale = Vector2(8.6235, 4.54462)
+theme_override_fonts/font = ExtResource("2_euxf8")
+text = "M"
+flat = true
+
+[node name="MAINTIME" type="Label" parent="."]
+offset_left = -347.403
+offset_top = -207.877
+offset_right = -283.403
+offset_bottom = -184.877
+scale = Vector2(11.6795, 8.80585)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_euxf8")
+text = "00:00"
+
+[node name="DECIMAS" type="Label" parent="."]
+offset_left = 148.508
+offset_top = -193.863
+offset_right = 188.508
+offset_bottom = -170.863
+scale = Vector2(8.8357, 7.84916)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_euxf8")
+text = ".00"
+
+[node name="MODO" type="Label" parent="."]
+offset_left = 217.459
+offset_top = -317.655
+offset_right = 264.459
+offset_bottom = -294.655
+scale = Vector2(3.32364, 2.39351)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_euxf8")
+text = "TIMER"
+
+[node name="ESTADO" type="Label" parent="."]
+offset_left = -400.442
+offset_top = -322.326
+offset_right = -329.442
+offset_bottom = -299.326
+scale = Vector2(2.63786, 2.55016)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_euxf8")
+text = "STOPPED"
+
+[node name="SECONDS" type="Button" parent="."]
+offset_left = -98.1214
+offset_top = 268.605
+offset_right = -81.1214
+offset_bottom = 299.605
+scale = Vector2(7.25856, 4.08312)
+theme_override_fonts/font = ExtResource("2_euxf8")
+text = "S"
+flat = true
+
+[node name="CLEAR" type="Button" parent="."]
+offset_left = 193.591
+offset_top = -469.475
+offset_right = 242.591
+offset_bottom = -438.475
+scale = Vector2(2.84986, 2.13591)
+text = "Clear"
+
+[node name="MODE" type="Button" parent="."]
+offset_left = 548.95
+offset_top = 51.3854
+offset_right = 556.95
+offset_bottom = 59.3854
+scale = Vector2(6.72818, 5.95168)
+flat = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = -310.276
+offset_top = 600.274
+offset_right = -105.276
+offset_bottom = 623.274
+scale = Vector2(3.01547, 3.37149)
+text = "By:Ruth/Jan Maya Delgado"
+
+[node name="STOPANDCONTINUE" type="Button" parent="."]
+offset_left = 209.503
+offset_top = 280.284
+offset_right = 217.503
+offset_bottom = 288.284
+scale = Vector2(18.2906, 13.6128)
+flat = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Timerdec" type="Timer" parent="."]
